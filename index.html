@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Guess Game</title>
+</head>
+<body>
+    
+    <header class="main-header">
+        <h1>HANGMAN</h1>
+        <h2>Who's That Pokemon?</h2>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="center">
+                <p id="pressPlay">Press any alphabet key to</p>
+                <h3>Guess That Pokemon!</h3>
+                <p id="wordAnswer"> </p>
+                <div class="gif">
+                    <iframe id="gif-embed" src="" frameborder="0"></iframe>
+                </div>
+            </div>
+            <div class="leftColumn">
+                <div class="wins">
+                    <h4>Wins</h4>
+                    <p id="winCounter"></p>
+                </div>
+                <div class="losses">
+                    <h4>Losses</h4>
+                    <p id="lossCounter"></p>
+                </div>
+            </div>
+            <div class="rightColumn">
+                <h4><span id="numGuesses"></span> Guesses Remaining</h4>
+                <h4>Guessed Letters</h4>
+                <p id="guessedLetters"></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
