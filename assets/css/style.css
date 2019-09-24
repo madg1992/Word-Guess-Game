@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+.container  {
+    display: table;
+    margin: 0 auto;
+}
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+  
+.left, .right {
+    width: 25%;
+    background-color: #ccc;
+}
+  
+.center {
+    width: 50%;
+    background-color: #bbb;
+    border-left: 3px solid #777777;
+    border-right: 3px solid #777777;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background-image: url("../images/grayImage.png");
+}
+
+h1  {
+    font-family: 'Nunito', sans-serif;
+    font-size: 5em;
+    text-align: center;
+    color: #04003d;
+    margin-top: 5rem;
+    font-weight: bolder;
+}
+
+h2 {
+    font-family: 'Bangers', cursive;
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow:
+    -3px -3px 0 #EF8E34,
+    3px -3px 0 #EF8E34,
+    -3px 3px 0 #EF8E34,
+    3px 3px 0 #EF8E34;
+    text-align: center;
+    margin-top: -10px;
+    margin-right: -220px;
+    transform: rotate(-10deg);
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-family: 'Bangers', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    color: #ed7b00;
+}
+
+h4 {
+    font-family: 'Fugaz One', cursive;
+    font-size: 1.5em;
+    color: #04003d;
+    text-align: center;
+}
+
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.75em;
+    text-align: center;
+}
+
+.wins {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.guesses {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+#pressPlay {
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+}
+

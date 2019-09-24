@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Fugaz+One|Nunito|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Word Guess Game</title>
 </head>
 <body>
@@ -15,29 +19,31 @@
 
     <main>
         <div class="container">
-            <div class="center">
-                <p id="pressPlay">Press any alphabet key to</p>
-                <h3>Guess That Pokemon!</h3>
-                <p id="wordAnswer"> </p>
-                <div class="gif">
-                    <iframe id="gif-embed" src="" frameborder="0"></iframe>
-                </div>
-            </div>
-            <div class="leftColumn">
+        <div class="row">
+            <div class="column left">
                 <div class="wins">
-                    <h4>Wins</h4>
+                    <h4>Wins:</h4>
                     <p id="winCounter"></p>
                 </div>
                 <div class="losses">
-                    <h4>Losses</h4>
+                    <h4>Losses:</h4>
                     <p id="lossCounter"></p>
                 </div>
             </div>
-            <div class="rightColumn">
-                <h4><span id="numGuesses"></span> Guesses Remaining</h4>
-                <h4>Guessed Letters</h4>
+            <div class="column center">
+                    <p id="pressPlay">Press any alphabet key to</p>
+                    <h3>Guess That Pokemon!</h3>
+                    <p id="wordAnswer"> </p>
+                    <div class="gif">
+                        <iframe id="giphy-embed" src="" frameborder="0"></iframe>
+                    </div>
+                </div>
+            <div class="column right">
+                <h4 class="guesses"><span id="numGuesses"></span> Guesses Remaining</h4>
+                <h4>Guessed Letters:</h4>
                 <p id="guessedLetters"></p>
             </div>
+        </div>
         </div>
     </main>
 </body>
